@@ -584,7 +584,7 @@ function mw.dumpObject( object )
 				ret[#ret + 1] = string.rep( " ", indent + 2 )
 				ret[#ret + 1] = 'metatable = '
 				ret[#ret + 1] = _dumpObject( mt, indent + 2, false )
-				ret[#ret + 1] = "\n"
+				ret[#ret + 1] = ",\n"
 			end
 
 			local doneKeys = {}
